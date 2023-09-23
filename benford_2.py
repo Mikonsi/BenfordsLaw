@@ -26,7 +26,7 @@ def main():
     # Mapping the result
     map_dict(first_test, 'Original Set')
     map_dict(second_test, 'Raised Set')
-    
+    # map_dict(first_test, 'Original Test,=', second_test, 'Raised test')
 
 def count_first(test_set):
     # Instead of creating empty dict to be filled by unordered set:
@@ -70,5 +70,22 @@ def map_dict(set, legend_label):
     plt.legend()
 
     plt.show
+
+# def map_dict(set1, legend1, set2, legend2):
+#     x = np.arange(len(set1))
+#     width = 0.5
+#     fig, ax = plt.subplots()
+#     graph1 = ax.bar(x - width/2, set1.values, width, label=legend1)
+#     graph2 = ax.bar(x + width/2, set2.values, width, label=legend2)
+
+#     plt.title('First Digit Distributions')
+#     plt.xlabel('First Digit')
+#     plt.ylabel('Frequency')
+#     plt.legend()
+
+#     plt.show
+
+def compare_frequencies(set1, set2):
+    ...
 
 main()
